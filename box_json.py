@@ -42,6 +42,6 @@ def species_to_json( species ):
 
     encode = json.dumps(j_species)
 
-    with io.open('neat_visaulization/data/data.json','w',encoding='utf8') as outfile:
+    with io.open('neat_visualization/data/data.json','w',encoding='utf8') as outfile:
         str_ = json.dumps(j_species, sort_keys = True, ensure_ascii=False)
         outfile.write(unicode(str_))
